@@ -14,6 +14,10 @@
   <body>
     <%= render 'layouts/navigation' %>
     <main class='container mt-5 pt-5'>
+      <div class="auth-messages">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
       <%= yield %>
     </main>
   </body>
